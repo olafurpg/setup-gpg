@@ -24,7 +24,7 @@ export function installGpg() {
 
   core.startGroup("make");
   shelljs.exec("make");
-  const g10 = path.join(shelljs.pwd(), "g10");
+  const g10 = path.join(shelljs.pwd().stdout.trim(), "g10");
   core.addPath(g10);
   core.endGroup();
 
