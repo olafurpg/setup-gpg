@@ -28,7 +28,7 @@ export function installGpg() {
   core.addPath(g10);
   core.endGroup();
 
-  shelljs.exec(`./${path.join(g10, "gpg")} --version`);
+  shelljs.exec(`${path.join(g10, "gpg")} --version`);
 }
 
 run();
