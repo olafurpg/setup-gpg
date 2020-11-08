@@ -12,9 +12,9 @@ async function run() {
 
 export function installGpg() {
   core.startGroup("Download gpg");
-  shelljs.exec("wget https://gnupg.org/ftp/gcrypt/gnupg/gnupg-1.4.23.tar.bz2");
-  shelljs.exec("bzip2 -d gnupg-1.4.23.tar.bz2");
-  shelljs.exec("tar xvf gnupg-1.4.23.tar");
+  shelljs.exec("[[ ! -d gnupg-1.4.23 ]] && wget https://gnupg.org/ftp/gcrypt/gnupg/gnupg-1.4.23.tar.bz2");
+  shelljs.exec("[[ ! -d gnupg-1.4.23 ]] && bzip2 -d gnupg-1.4.23.tar.bz2");
+  shelljs.exec("[[ ! -d gnupg-1.4.23 ]] && tar xvf gnupg-1.4.23.tar");
   shelljs.cd("gnupg-1.4.23");
   core.endGroup();
 
