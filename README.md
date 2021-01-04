@@ -1,3 +1,6 @@
+# DEPRECATED
+This is no longer necessary, since https://github.com/olafurpg/sbt-ci-release/releases/tag/v1.5.5
+
 # Create a JavaScript Action using TypeScript
 
 Use this template to bootstrap the creation of a JavaScript action.:rocket:
